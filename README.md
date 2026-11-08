@@ -5,9 +5,9 @@ Build and compare five classification models (Logistic Regression, Decision Tree
 
 ## b. Dataset description
 - **Source:** Breast Cancer Wisconsin (Diagnostic) dataset, UCI Machine Learning Repository (also distributed with scikit-learn as `load_breast_cancer`).
-- **Instances:** 569 (minimum required: 500)
-- **Features:** 30 numeric features (minimum required: 12): mean, standard error and "worst" value of 10 nucleus measurements (radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, fractal dimension).
-- **Target:** `target`, binary: 0 = malignant (212 cases), 1 = benign (357 cases).
+- **Instances:** 569
+- **Features:** 30 numeric features: mean, standard error and "worst" value of 10 nucleus measurements (radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, fractal dimension).
+- **Target:** `target`, binary: 0 = malignant, 1 = benign.
 - **Split:** 80/20 stratified train/test split (`random_state=42`); test set = 114 rows, saved as `test_data.csv`.
 - **Preprocessing:** `StandardScaler` inside a scikit-learn `Pipeline` with each classifier, so scaling is saved with each model.
 
@@ -22,7 +22,7 @@ bc-diagnosis-classifier-app/
 ├── train_models.py      # trains the 5 models, saves models + test data + metrics
 ├── requirements.txt
 ├── README.md
-├── test_data.csv        # held-out test data (features + target)
+├── test_data.csv        # held out test data (features + target)
 ├── full_dataset.csv
 └── model/               # saved pipelines (.joblib) + metrics.csv
 ```
