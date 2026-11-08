@@ -14,7 +14,7 @@ Build and compare five classification models (Logistic Regression, Decision Tree
 ## c. GitHub repository link
 https://github.com/lakshman-battini/bc-diagnosis-classifier-app
 
-Live app: <PASTE YOUR STREAMLIT APP LINK HERE>
+Live app: [<PASTE YOUR STREAMLIT APP LINK HERE>](https://bc-diagnosis-classifier.streamlit.app/)
 
 ```
 bc-diagnosis-classifier-app/
